@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    width: 100%;
+    display: flex;
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(300deg, rgba(10,10,10,.5), rgba(10,10,10,.6)), url(../assets/images/instagram-05.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    animation: animate 16s infinite;
+    animation-delay: .4s;
+}
+
+@keyframes animate {
+    0%{
+        background-image: linear-gradient(300deg, rgba(10,10,10,.5), rgba(10,10,10,.6)), url(../assets/images/instagram-05.jpg);
+    }
+    50% {
+        background-image: linear-gradient(300deg, rgba(10,10,10,.5), rgba(10,10,10,.6)), url(../assets/images/instagram-06.jpg);
+    }
+    100% {
+        background-image: linear-gradient(300deg, rgba(10,10,10,.5), rgba(10,10,10,.6)), url(../assets/images/instagram-02.jpg);
+    }
+}
+
+.container {
+    background: linear-gradient(45deg, rgba(9,9,9, .5), rgba(10,10,10, .7)), url(../assets/images/baner-right-image-04.jpg);
+    padding: 1.3em 1em;
+    width: 500px;
+    height: auto;
+    border-radius: .6em;
+}
+
+.container .logo p {
+    width: 25px;
+    height: 25px;
+    background: grey;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 1em;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+
+.container .page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+}
+
+.page .emmac {
+    text-align: center;
+    padding: 1em 0;
+}
+
+.emmac h2 {
+    font-size: 1.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: radial-gradient(violet, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.emmac p {
+    font-size: 1em;
+    font-weight: 500;
+    background-image: url(../assets/images/left-banner-image.jpg);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.emmac .form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form form .inputdetails {
+    position: relative;
+    width: 100%;
+    margin: 1em 0 ;
+    border-bottom: 1px solid lightslategray;
+}
+
+form .inputdetails input {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+    color: rgba(141, 129, 141, 0.743);
+    padding: 0 1em;
+    background: transparent;
+}
+
+form .inputdetails label {
+    position: absolute;
+    top: 60%;
+    left: 1em;
+    font-size: .8em;
+    font-weight: 600;
+    color: rgb(123, 123, 157);
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: .4s;
+}
+
+.form form input:focus~label {
+    top: -40%;
+    
+}
+
+.form form .forgetremember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+form .forgetremember .me {
+    display: flex;
+    gap: 8px;
+    font-size: 1em;
+    font-weight: 500;
+    background-image: url(../assets/images/left-banner-image.jpg);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+form .forgetremember input {
+    accent-color: lightgray;
+}
+
+.forgetremember .forget a {
+    background-image: url(../assets/images/instagram-06.jpg);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.form form .b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form form .b .btn {
+    width: 70%;
+    outline: none;
+    border: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: .5em 1em;
+    background-image: url(../assets/images/instagram-02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: burlywood;
+    text-transform: uppercase;
+    border-radius: .4em;
+    cursor: pointer;
+}
+
+form .b .btn:hover {
+    color: chocolate;
+    background-image: url(../assets/images/instagram-06.jpg);   
+}
+
+.form .register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    margin-top: 1.2em;
+}
+
+.register p {
+    color: lightgrey;
+}
+
+.register p .sbtn {
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1em;
+    font-weight: 600;
+    color: lightgray;
+}
+
+.register p .sbtn:hover {
+    text-decoration: underline;
+
+}

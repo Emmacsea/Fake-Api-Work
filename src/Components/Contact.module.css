@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(7, 7, 7, .4), rgba(10, 10, 10, .7)), url(../assets/images/about-us-page-heading.jpg);
+    color: lightgray;
+    padding: 1.2em 3em 2em ;
+    
+}
+
+header .head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 1.3em;
+}
+
+.head .logo h2 {
+    width: 25px;
+    height: 25px;
+    background: grey;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 1em;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+
+.head .means {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.means nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0;  
+}
+
+.means nav ul li {
+    text-transform: capitalize;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.means nav ul li p {
+    color: darkgray;
+    cursor: pointer;
+}
+
+.means nav ul .em .btnn{
+    outline: none;
+    background: radial-gradient(black, lightgray);
+    border: none;
+    font-size: .8em;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: lightgrey;
+    padding: .4em 1.5em;
+    border-radius: .5em;
+}
+
+.means .input {
+    width: 220px;
+    height: 36px;
+    position: relative;
+}
+
+.means .input input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: .3em;
+    padding: .6em 3.4em .6em 1.2em;
+    font-size: .8em;
+    color: gray;
+    font-weight: 700;
+    margin-left: 2em;
+}
+
+.means .input input:focus {
+    border: 1px solid lightslategray;
+}
+
+.means .input img {
+    position: absolute;
+    top: 10px;
+    right: -1em;
+    width: 30px;
+    height: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-size: .8em;
+    color: lightsteelgrey;
+}
+
+.contactcont .words {
+    font-size: 2em;
+    font-weight: 800;
+    text-transform: capitalize;
+    padding-bottom: .4em;
+    text-align: center;
+}
+
+.contactcont .per {
+    font-size: 1.2em;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.contactcont .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1.1em;
+}
+
+.button .sbtn {
+    outline: none;
+    border: 1px solid hsl(0, 0%, 100%);
+    padding: .6em 1.2em;
+    color: aliceblue;
+    font-size: .7em;
+    text-transform: uppercase;
+    text-align: center;
+    background: transparent;
+    border-radius: .4em;
+    cursor: pointer;
+}
+
+.button .sbtn:hover {
+    background: hsl(0, 0%, 100%);
+    color: black;
+}
+
+.contactcont main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: wrap;
+    padding: 18em 4em 2em;
+    width: 100%;
+    background-image: linear-gradient(300deg, rgba(10,10,10,.6), rgba(10,10,10,.8)), url(../assets/images/instagram-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.contactcont main .maintop {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+
+.mainleft, .mainright {
+    height: 100%;
+}
+
+main .mainleft {
+    width: 50%;
+    color: darkgray;
+    
+}
+
+.mainleft h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: .4em;
+    text-transform: uppercase;
+    margin-bottom: .7em;
+    text-align: center;
+}
+
+.mainleft p {
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+main .mainright {
+    width: 50%;
+}
+
+.mainright form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.mainright form .inputnames {
+    width: 100%;
+    display: flex;
+    margin: 1.2em 0;
+    gap: 50px;
+}
+
+.forminput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.forminput label {
+    color: darkgray;
+    font-size: 1.3em;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: .4em;
+}
+
+.forminput input {
+    outline: none;
+    border: 2px solid dimgray;
+    background: transparent;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: darkgray;
+    padding: .5em 1em;
+    border-radius: .3em;
+}
+
+.forminput input:focus {
+    border: 4px solid dimgray;
+}
+
+.forminput textarea {
+    outline: none;
+    border: 2px solid dimgray;
+    background: transparent;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: darkgray;
+    padding: .7em 1em;
+    border-radius: .3em;
+}
+
+.forminput textarea:focus {
+    border: 4px solid dimgray;
+}
+
+.mainright form .submitmsg {
+    width: 35%;
+    outline: none;
+    border: none;
+    border-radius: .4em;
+    padding: .5em 1em;
+    color: lightgrey;
+    font-size: 1.3em;
+    background-image: linear-gradient(45deg, rgba(10, 10, 10, .5), rgba(10,10, 10,.3)), url(../assets/images/instagram-06.jpg);
+    background-position: center;
+    background-size: 100%;
+    margin-top: 1.3em;
+}
+
+.contactcont main .mainbottom {
+    width: 100%;
+    margin-top: 4em;
+    display: flex;
+    color: lightgray;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+
+.mainbottom .btmleft {
+    width: 55%;
+}
+
+.btmleft h3 {
+    font-size: 2.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .3em;
+    color: black;
+}
+
+.btmleft p {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin: 1em 0;
+    line-height: 1.7;
+}
+
+.btmleft p span {
+    color: tan;
+    text-transform: uppercase;
+}
+
+.btmleft form {
+    width: 100%;
+}
+
+.btmleft form .newsletter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.newsletter input {
+    width: 100%;
+    outline: none;
+    border: 2px solid dimgray;
+    color: lightgrey;
+    background: transparent;
+    padding: .7em 1.1em;
+    font-size: 1.01em;
+    font-weight: 400;
+    border-radius: .3em;
+}
+
+.newsletter input:focus {
+    border: 4px solid dimgray;
+}
+
+.newsletter input::placeholder {
+    font-size: 1.1em;
+}
+
+.newsletter .btntop {
+    outline: none;
+    border: none;
+    padding: .6em 1.1em;
+    color: lightgrey;
+    font-size: 1.2em;
+    background-image: linear-gradient(90deg, rgba(10, 10, 10, .6), rgba(10, 10, 10, .5)), url(../assets/images/instagram-06.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.mainbottom .btmright {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btmright .left {
+    width: 50%;
+}
+
+.btmright .right {
+    width: 50%;
+}
+
+.btmright .foot {
+    margin-bottom: 1.2em;
+}
+
+.foot:last-child {
+    margin-bottom: 0;
+}
+
+.btmright .foot h3 {
+    font-size: 1.7em;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: black;
+}
+
+.btmright .foot p {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: lightgray;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(7, 7, 7, .4), rgba(10, 10, 10, .7)), url(../assets/images/about-us-page-heading.jpg);
+    color: lightgray;
+    padding: 1.2em 4em;
+}
+
+footer .footertop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0 2.3em;
+    align-items: center;
+    margin-top: 1.5em;
+    border-bottom: 1px solid darkgray;
+    border-width: 100%;
+}
+
+.footertop .shopdetails .logo {
+    margin-bottom: 2em;
+}
+
+.footertop .shopdetails .logo p {
+    width: 25px;
+    height: 25px;
+    background: grey;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 1em;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+
+.footertop .shop {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footertop .shop p {
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footertop .shop p:hover {
+    color: darkgray;
+}
+
+.footertop .shop h3 {
+    font-size: 1.6em;
+    font-weight: 800;
+    margin-bottom: .6em;
+}
+
+footer .footerbottom {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerbottom p {
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 1.2em;
+}
+
+.footerbottom .icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footerbottom .icons a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.footerbottom .icons a img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid darkgrey;
+    border-radius: 50%;
+}
