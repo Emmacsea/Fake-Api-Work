@@ -140,6 +140,16 @@ function App() {
       }
 
       {page === 3 && (
+      <AboutUs
+      onClickLogin={LoginPage}
+      onClickSignup={SignupPage}
+      onClickHome={ShopPage}
+      onClickAbout={AboutPage}
+      onClickService={ServicePage}
+      onClickContact={ContactPage}
+      />)}
+
+      {page === 4 && (
       <Contact
        fullname={fullname}
        email={email}
@@ -157,15 +167,7 @@ function App() {
        onSubmitSubscription={handleSubmit}
       />
 )}
-      {page === 4 && (
-      <AboutUs
-      onClickLogin={LoginPage}
-      onClickSignup={SignupPage}
-      onClickHome={ShopPage}
-      onClickAbout={AboutPage}
-      onClickService={ServicePage}
-      onClickContact={ContactPage}
-      />)}
+      
 
     {page === 5 &&  ( <Service
       fullname={fullname}

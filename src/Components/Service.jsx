@@ -66,7 +66,7 @@ export const Service = ({
 
       <main>
         <div className={style.sectiontop}>
-          <h3>Our Service</h3>
+          <h3>Our Services</h3>
           <div className={style.secttopimg}>
             <div className={style.topimg}>
               <img src={service2} alt="" />
