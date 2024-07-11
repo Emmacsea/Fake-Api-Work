@@ -9,7 +9,7 @@ html {
 }
 
 header {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -37,7 +37,7 @@ header .head {
     height: 25px;
     background: grey;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     padding: 1em;
     display: grid;
@@ -63,7 +63,7 @@ header .head {
 
 .means nav ul li {
     text-transform: capitalize;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 700;
 }
 
@@ -76,7 +76,7 @@ header .head {
     outline: none;
     background: radial-gradient(black, lightgray);
     border: none;
-    font-size: .8em;
+    font-size: .9em;
     font-weight: 500;
     text-transform: capitalize;
     color: lightgrey;
@@ -84,48 +84,8 @@ header .head {
     border-radius: .5em;
 }
 
-.means .input {
-    width: 220px;
-    height: 36px;
-    position: relative;
-}
-
-.means .input input {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    outline: none;
-    border: 1px solid lightgray;
-    border-radius: .3em;
-    padding: .6em 3.4em .6em 1.2em;
-    font-size: .8em;
-    color: gray;
-    font-weight: 700;
-    margin-left: 2em;
-}
-
-.means .input input:focus {
-    border: 1px solid lightslategray;
-}
-
-.means .input img {
-    position: absolute;
-    top: 10px;
-    right: -1em;
-    width: 30px;
-    height: 20px;
-    display: block;
-    cursor: pointer;
-}
-
-::placeholder {
-    font-size: .8em;
-    color: lightsteelgrey;
-}
-
 .servicecont .words {
-    font-size: 2em;
+    font-size: 1.7em;
     font-weight: 800;
     text-transform: capitalize;
     padding-bottom: .4em;
@@ -133,7 +93,7 @@ header .head {
 }
 
 .servicecont .per {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 400;
     text-transform: capitalize;
     text-align: center;
@@ -152,7 +112,7 @@ header .head {
     border: 1px solid hsl(0, 0%, 100%);
     padding: .6em 1.2em;
     color: aliceblue;
-    font-size: .7em;
+    font-size: .6em;
     text-transform: uppercase;
     text-align: center;
     background: transparent;
@@ -170,7 +130,7 @@ header .head {
     flex-direction: column;
     align-items: center;
     white-space: wrap;
-    padding: 20em 4em 5em;
+    padding: 5em 4em 5em;
     width: 100%;
     background-image: linear-gradient(300deg, rgba(10,10,10,.6), rgba(10,10,10,.8)), url(../assets/images/instagram-02.jpg);
     background-repeat: no-repeat;
@@ -186,7 +146,7 @@ header .head {
 }
 
 .sectiontop h3 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 700;
     color: black;
     letter-spacing: .4em;
@@ -214,8 +174,8 @@ header .head {
 }
 
 .secttopimg .topimg img {
-    display: block;
-    width: 300px;
+    /* display: block; */
+    width: 250px;
     height: 300px;
 }
 
@@ -242,7 +202,7 @@ header .head {
 }
 
 .btmleft h3 {
-    font-size: 2.3em;
+    font-size: 1.9em;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -251,7 +211,7 @@ header .head {
 }
 
 .btmleft p {
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: 400;
     margin: 1em 0;
     line-height: 1.7;
@@ -281,7 +241,7 @@ header .head {
     color: lightgrey;
     background: transparent;
     padding: .7em 1.1em;
-    font-size: 1.01em;
+    font-size: 1em;
     font-weight: 400;
     border-radius: .3em;
 }
@@ -291,7 +251,7 @@ header .head {
 }
 
 .newsletter input::placeholder {
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .newsletter .btntop {
@@ -299,7 +259,7 @@ header .head {
     border: none;
     padding: .6em 1.1em;
     color: lightgrey;
-    font-size: 1.2em;
+    font-size: 1em;
     background-image: linear-gradient(90deg, rgba(10, 10, 10, .6), rgba(10, 10, 10, .5)), url(../assets/images/instagram-06.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -330,14 +290,14 @@ header .head {
 }
 
 .btmright .foot h3 {
-    font-size: 1.7em;
+    font-size: 1.3em;
     font-weight: 700;
     text-transform: capitalize;
     color: black;
 }
 
 .btmright .foot p {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 500;
     color: lightgray;
 }

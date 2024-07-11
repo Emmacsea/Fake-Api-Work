@@ -5,7 +5,7 @@
 }
 
 .signupcont {
-    width: 900px;
+    width: 830px;
     height: 500px;
     display: flex;
     padding: 1.2em;
@@ -38,7 +38,7 @@
 
 .left h2 {
     margin: 1.2em 0 .4em;
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 500;
     text-align: center;
 }
@@ -46,14 +46,14 @@
 .left p {
     font-size: .8em;
     line-height: 1.7;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     color: hsla(0,0%, 100%, .5);
-    margin-bottom: .5em;
+    margin-bottom: .6em;
 }
 
 .left h3 {
-    font-size: 1.7em;
+    font-size: 1.4em;
     text-align: center;
     display: flex;
     flex-wrap: nowrap;
@@ -72,7 +72,6 @@
     padding: .5em 1em;
     color: hsla(357, 45%, 8%, 0.7);
     background: radial-gradient( hsla(0, 3%, 55%, 0.7), hsla(30, 30%, 40%, .6));
-
 }
 
 .left .login:hover {
@@ -178,7 +177,8 @@ form .btn {
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    font-size: 1.1em;
+    font-size: 1em;
+    margin-top: .7em;
     color: darkgray;
     padding: .8em 1em;
     cursor: pointer;

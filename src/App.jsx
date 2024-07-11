@@ -111,7 +111,7 @@ function App() {
         <Login
           username={username}
           password={password}
-          onChangeEmail={onChangeEmail}
+          onChangeUsername={onChangeUsername}
           onChangePassword={onChangePassword}
           onSubmitForm={ShopPage}
           onClickSignUp={SignupPage}
