@@ -1,4 +1,6 @@
+import { useState } from "react";
 import style from "./Login.module.css";
+import PropTypes from 'prop-types';
 
 export default function Login({
   username,
@@ -8,21 +10,21 @@ export default function Login({
   onSubmitForm,
   onClickSignUp,
 }) {
-  // const [error, setError] = useState({})
+  const [error, setError] = useState({})
 
-  // const handleLogin = (e) => {
-  //   e.preventDefault();
-  //   const newError = {};
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const newError = {};
 
-  //   if (!username) newError.username = `Please input your username`;
-  //   if (!password) newError.password = `Please input password`;
+    if (!username) newError.username = `Please input your username`;
+    if (!password) newError.password = `Please input password`;
 
-  //   setError(newError);
+    setError(newError);
 
-  //   if(Object.keys(newError).length === 0){
-  //     onSubmitForm()
-  //   }
-  // }
+    if(Object.keys(newError).length === 0){
+      onSubmitForm()
+    }
+  }
 
   return (
     <div className={style.container}>
@@ -37,20 +39,22 @@ export default function Login({
         </div>
 
         <div className={style.form}>
-          <form action="" onSubmit={onSubmitForm}>
+          <form action="" onSubmit={handleLogin}>
             <div className={style.inputdetails}>
               <input type="text" value={username} onChange={onChangeUsername} />
               <label htmlFor="">Username</label>
             </div>
+              {error.username && ( <p className={style.errors}>{error.username}</p>)}
 
             <div className={style.inputdetails}>
               <input
                 type="password"
                 value={password}
-                onChange={onChangePassword}
+                onChange={onChangePassword}              
               />
               <label htmlFor="">Password</label>
             </div>
+              {error.password && (<p className={style.errors}>{error.password}</p>)}
 
             <div className={style.forgetremember}>
               <div className={style.me}>
@@ -86,4 +90,13 @@ export default function Login({
       </div>
     </div>
   );
+}
+
+Login.propTypes={
+  username: PropTypes.string.isRequired,
+  password: PropTypes.string.isRequired,
+  onChangeUsername: PropTypes.func.isRequired,
+  onChangePassword: PropTypes.func.isRequired,
+  onSubmitForm: PropTypes.func.isRequired,
+  onClickSignUp: PropTypes.func.isRequired,
 }

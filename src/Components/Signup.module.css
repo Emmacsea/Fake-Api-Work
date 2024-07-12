@@ -6,7 +6,7 @@
 
 .signupcont {
     width: 830px;
-    height: 500px;
+    height: 640px;
     display: flex;
     padding: 1.2em;
     justify-content: center;
@@ -149,6 +149,10 @@ form .names {
     padding: .6em 1.2em;
 }
 
+.errors {
+    color: lightcoral;
+}
+
 .details label {
     position: absolute;
     top: 20px;
@@ -182,4 +186,5 @@ form .btn {
     color: darkgray;
     padding: .8em 1em;
     cursor: pointer;
+    margin-bottom: -1em;
 }

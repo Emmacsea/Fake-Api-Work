@@ -1,4 +1,4 @@
-import React from "react";
+
 // import { link } from 'react-router-dom'
 import style from "./Emmacshop.module.css";
 import searchimg from "../assets/images/search-icon.png";
@@ -6,6 +6,8 @@ import fb from "../assets/images/facebook back.jfif";
 import insta from "../assets/images/insta back.jfif";
 import twit from "../assets/images/twitter back.png";
 import link from "../assets/images/linkedin.png";
+import cart from "../assets/images/Entypo_e73d(0)_32.jpg"
+import PropTypes from 'prop-types'
 
 // import PropTypes from 'prop-types'
 
@@ -58,7 +60,11 @@ export default function Emmacshop({
 
             <div className={style.input}>
               <input type="text" placeholder="Search... " />
-              <img onClick={onClickSearch} src={searchimg} alt="" />
+              <img onClick={onClickSearch} src={searchimg} alt="search icon" />
+            </div>
+
+            <div className={style.cart}>
+              <img onClick={onClickCart} src={cart} alt="cart icon"/>
             </div>
           </div>
         </div>
@@ -153,4 +159,16 @@ export default function Emmacshop({
       </footer>
     </div>
   );
+}
+
+Emmacshop.propTypes = {
+  onClickHome: PropTypes.func.isRequired, 
+  onClickAbout: PropTypes.func.isRequired, 
+  onClickContact: PropTypes.func.isRequired, 
+  onClickService: PropTypes.func.isRequired, 
+  onClickLogin: PropTypes.func.isRequired, 
+  onClickSignup: PropTypes.func.isRequired, 
+  onClickSearch: PropTypes.func.isRequired, 
+  onClickCart: PropTypes.func.isRequired, 
+  shop: PropTypes.object.isRequired,
 }

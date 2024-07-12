@@ -6,6 +6,8 @@ import fb from "../assets/images/facebook back.jfif";
 import insta from "../assets/images/insta back.jfif";
 import twit from "../assets/images/twitter back.png";
 import link from "../assets/images/linkedin.png";
+import PropTypes from 'prop-types';
+
 export const Service = ({
   fullname,
   email,
@@ -241,3 +243,18 @@ export const Service = ({
     </div>
   );
 };
+
+
+Service.propTypes = {
+  fullname: PropTypes.string.isRequired,
+  email: PropTypes.string.isRequired,
+  onChangeFullname: PropTypes.func.isRequired,
+  onChangeEmail: PropTypes.func.isRequired,
+  onClickLogin: PropTypes.func.isRequired,
+  onClickSignup: PropTypes.func.isRequired,
+  onSubmitSubscription: PropTypes.func.isRequired,
+  onClickHome: PropTypes.func.isRequired,
+  onClickAbout: PropTypes.func.isRequired,
+  onClickContact: PropTypes.func.isRequired,
+  onClickService: PropTypes.func.isRequired,
+}

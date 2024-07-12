@@ -152,7 +152,7 @@ header .head {
 }
 
 .aboutcont main .ustop .usleft {
-    width: 45%;
+    width: 40%;
     height: 500px;
     /* display: block; */
     background-image: linear-gradient(150deg, rgba(10, 10, 10, .6), rgba(10, 10, 10, .7)), url(../assets/images/explore-image-01.jpg);
@@ -218,20 +218,20 @@ header .head {
 }
 
 .usbottom .team .teamz img {
-    width: 350px;
-    height: 380px;
+    width: 300px;
+    height: 350px;
     display: block;
 }
 
 .usbottom .team .teamz h4 {
     color: rgba(10,10,10,.8);
-    font-size: 1.9em;
+    font-size: 1.5em;
     font-weight: 700;
     
 }
 
 .usbottom .team .teamz p {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     text-align: center;
     color: rgba(10,10,10,.6);

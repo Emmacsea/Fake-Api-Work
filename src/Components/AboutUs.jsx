@@ -1,4 +1,4 @@
-import React from "react";
+
 // import { link } from 'react-router-dom'
 import style from "./Aboutus.module.css";
 import team1 from "../assets/images/team-member-01.jpg";
@@ -8,8 +8,8 @@ import fb from "../assets/images/facebook back.jfif";
 import insta from "../assets/images/insta back.jfif";
 import twit from "../assets/images/twitter back.png";
 import link from "../assets/images/linkedin.png";
+import PropTypes from 'prop-types'
 
-// import PropTypes from 'prop-types'
 
 export const AboutUs = ({
   onClickLogin,
@@ -181,3 +181,12 @@ export const AboutUs = ({
     </div>
   );
 };
+
+AboutUs.propTypes = {
+  onClickHome: PropTypes.func.isRequired,
+  onClickAbout: PropTypes.func.isRequired,
+  onClickContact: PropTypes.func.isRequired,
+  onClickService: PropTypes.func.isRequired,
+  onClickLogin: PropTypes.func.isRequired,
+  onClickSignup: PropTypes.func.isRequired,
+}

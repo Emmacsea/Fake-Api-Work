@@ -98,6 +98,11 @@ body{
     border-bottom: 1px solid lightslategray;
 }
 
+.errors {
+    color: lightcoral;
+    margin: -1em 0 1em;
+}
+
 form .inputdetails input {
     width: 100%;
     outline: none;
