@@ -175,12 +175,12 @@ header .head {
 
 .secttopimg .topimg img {
     /* display: block; */
-    width: 180px;
-    height: 250px;
+    width: 160px;
+    height: 230px;
 }
 
 .secttopimg .topimg p {
-    font-size: .9em;
+    font-size: .8em;
     font-weight: 600;
     color: dimgray;
     margin-top: .5em;
